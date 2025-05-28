@@ -3,11 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Pussy App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <section>
+      <div class="cats-intro">
+        <div class="title">
+          <h3>The Pussy App</h3>
+        </div>
+        <div class="cat-submission-form">
+            <div class="cat-form">
+              <label for="cat">Number Of Cats Facts (50 Max)</label>
+              <div class="input-controls">
+                <input type="number" name="cat-fact-num" placeholder="number of cat facts (50 max)" id="cat-fact-num" class="cat-num-input">
+                <button type="submit">Submit</button>
+              </div>
+            </div>
+            <div class="cat-form">
+              <div class="cat-form">
+                <label for="cat-photo-num">Number Of Cats Photos (10 Max)</label>
+                <div class="input-controls">
+                  <input type="number" name="cat-photo-num" placeholder="number of cat Photos (10 max)" id="cat-photo-num" class="cat-num-input">
+                  <button type="submit">Submit</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="cat-photos-facts-display"></div>
+    </section>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
