@@ -4,14 +4,23 @@ const catFactInput = document.getElementById("cat-fact-input");
 const catPhotoInput = document.getElementById("cat-photo-input");
 const catFactBtn = document.getElementById("cat-fact-btn");
 const catPhotoBtn = document.getElementById("cat-photo-btn");
-const factPhotoDisplay = document.getElementById("factPhotoDisplay");
 const catFactList = document.getElementById("cat-list");
 const imgContainer = document.getElementById("img-container");
 const errorDisplay = document.getElementById("error");
 
 async function fetchCatFacts() {
   try {
+
+    //cat facts input validation
+    let catFactsNumber = catFactInput.value;
+    if(catFactsNumber < 1 || catFactsNumber > 50) {
+        errorDisplay.classList.remove("d-none");
+        errorDisplay.innerHTML = `Number should be within allowed limits`;
+        return
+    }
+
     imgContainer.classList.add("d-none");
+    errorDisplay.classList.add("d-none");
     catFactList.classList.remove("d-none");
     catFactList.innerHTML = "";
     catFactList.innerHTML = `<div class="spinner"></div>`;
@@ -40,7 +49,17 @@ async function fetchCatFacts() {
 
 async function fetchCatPhotos() {
   try {
+
+    //cat photos number input validation
+    let catPhotoNumber = catPhotoInput.value;
+    if(catPhotoNumber < 1 || catPhotoNumber > 10) {
+        errorDisplay.classList.remove("d-none");
+        errorDisplay.innerHTML = `Number should be within allowed limits`;
+        return
+    }
+
     catFactList.classList.add("d-none");
+    errorDisplay.classList.add("d-none");
     imgContainer.classList.remove("d-none");
     imgContainer.innerHTML = "";
     imgContainer.innerHTML = `<div class="spinner"></div>`;
