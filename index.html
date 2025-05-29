@@ -13,20 +13,23 @@
         <div class="title">
           <h3>The Pussy App</h3>
         </div>
+        <div class="error error-display d-none" id="error">
+          something went wrong. Please try again later
+        </div>
         <div class="cat-submission-form">
             <div class="cat-form">
               <label for="cat">Number Of Cats Facts (50 Max)</label>
               <div class="input-controls">
-                <input type="number" name="cat-fact-num" placeholder="number of cat facts (50 max)" id="cat-fact-num" class="cat-num-input">
-                <button type="submit">Submit</button>
+                <input type="number" name="cat-fact-num" placeholder="number of cat facts (50 max)" id="cat-fact-input" class="cat-num-input">
+                <button type="submit" id="cat-fact-btn">Submit</button>
               </div>
             </div>
             <div class="cat-form">
               <div class="cat-form">
                 <label for="cat-photo-num">Number Of Cats Photos (10 Max)</label>
                 <div class="input-controls">
-                  <input type="number" name="cat-photo-num" placeholder="number of cat Photos (10 max)" id="cat-photo-num" class="cat-num-input">
-                  <button type="submit">Submit</button>
+                  <input type="number" name="cat-photo-num" placeholder="number of cat Photos (10 max)" id="cat-photo-input" class="cat-num-input">
+                  <button type="submit" id="cat-photo-btn">Submit</button>
                 </div>
               </div>
             </div>
@@ -34,7 +37,10 @@
       </div>
     </section>
     <section>
-      <div class="cat-photos-facts-display"></div>
+      <div class="cat-photos-facts-display" id="factPhotoDisplay">
+        <ol class="cat-fact-list" id="cat-list"></ol>
+        <div class="img-container" id="img-container"></div>
+      </div>
     </section>
     <script type="module" src="/src/main.js"></script>
   </body>

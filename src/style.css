@@ -16,6 +16,8 @@ html {
   --cats-secondary-bg: #fff7f3; 
   --form-group-color: #c599b6;
   --text-white: #fff;
+  --error-bg: #f7a2a2;
+  --error-text: #f30303;
 }
 
 ::placeholder {
@@ -80,7 +82,72 @@ button[type="submit"] {
 }
 
 .cat-photos-facts-display {
-  padding: 3rem 2rem;
+  margin: auto;
+  width: 90%;
+  font-size: 2rem;
+}
+
+.cat-fact-list {
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1.5rem auto;
+}
+
+.error {
+  background-color: var(--error-bg);
+  color: var(--error-text);
+  width: fit-content;
+  margin: auto;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 4px;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.img-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
+  margin: 4rem;
+  justify-content: center;
+}
+
+.img {
+  width: 30rem;
+  height: 40rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 14px solid var(--cats-bg);
+  border-bottom: 14px solid var(--cats-bg);
+  border-right: 14px solid var(--cats-secondary-bg);
+  border-left: 14px solid var(--cats-secondary-bg);
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  margin: 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
