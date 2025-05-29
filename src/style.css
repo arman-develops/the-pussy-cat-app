@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
   padding: 0;
@@ -13,7 +12,7 @@ html {
 
 :root {
   --cats-bg: #fad0c4;
-  --cats-secondary-bg: #fff7f3; 
+  --cats-secondary-bg: #fff7f3;
   --form-group-color: #c599b6;
   --text-white: #fff;
   --error-bg: #f7a2a2;
@@ -21,7 +20,7 @@ html {
 }
 
 ::placeholder {
-    color: var(--form-group-color);
+  color: var(--form-group-color);
 }
 
 body {
@@ -42,7 +41,7 @@ h3 {
   font-size: 4rem;
   font-weight: 700;
   text-align: center;
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .cat-submission-form {
@@ -63,7 +62,8 @@ label {
   width: 100%;
 }
 
-.cat-num-input, button[type="submit"] {
+.cat-num-input,
+button[type="submit"] {
   text-align: center;
   padding: 2rem;
   outline: none;
@@ -124,10 +124,10 @@ button[type="submit"] {
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .spinner {
