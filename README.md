@@ -1,4 +1,4 @@
-# The Pussy App 🐱
+# The Cats App 🐱
 
 A delightful web application that fetches random cat facts and adorable cat photos to brighten your day! Built with vanilla JavaScript and modern web APIs.
 
@@ -14,7 +14,7 @@ A delightful web application that fetches random cat facts and adorable cat phot
 ![Preview](./public/preview.png)
 
 ## Demo
-**Live URL**: [Vercel URL link]() 
+**Live URL**: [Vercel URL link](https://the-pussy-cat-app.vercel.app/) 
 
 The app provides two main functionalities:
 
@@ -34,8 +34,8 @@ The app provides two main functionalities:
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd the-pussy-app
+   git clone https://github.com/arman-develops/the-pussy-cat-app.git
+   cd the-pussy-cat-app
    ```
 
 2. **Install dependencies**
